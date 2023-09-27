@@ -27,7 +27,6 @@ namespace LoginCookieWebForm
             string clave = tbClave.Text;
             if (nombre == "admin" && clave == "admin")
             {
-
                 #region cookie
                 HttpCookie myCookie = new HttpCookie("UserSettings");
                 myCookie["Username"] = nombre;
