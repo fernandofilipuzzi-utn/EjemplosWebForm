@@ -1,0 +1,9 @@
+﻿
+notas:
+https://stackoverflow.com/questions/2693731/asp-net-cookie-update-value-without-updating-expiration
+
+La clase ASP.NET HttpCookie no puede inicializar la propiedad Expires al leer una cookie de una solicitud 
+HTTP (ya que la especificación HTTP no requiere que el cliente envíe siquiera el valor de Expiración al 
+servidor en primer lugar). Y si no configura la propiedad Expires antes de volver a configurar la cookie 
+en la respuesta HTTP, la convierte en una cookie de sesión en lugar de una persistente.
+
