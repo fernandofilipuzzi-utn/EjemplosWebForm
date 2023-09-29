@@ -9,31 +9,42 @@ namespace LoginCookieWebForm
 {
     public partial class SiteMaster : MasterPage
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected void Page_Init(object sender, EventArgs e)
         {
-            HttpCookie retrievedCookie = Request.Cookies["UserSettings"];
-           
-            if (retrievedCookie != null)
-            {
-                string username = retrievedCookie["Username"];
-                string lastVisit = retrievedCookie["LastVisit"];
-            }
-            else
+            //HttpCookie retrievedCookie = Request.Cookies["UsuarioSettings"];
+            HttpCookie cookie = HttpContext.Current.Request.Cookies["UsuarioSettings"];
+
+            if (cookie == null)
             {
                 Response.Redirect("login.aspx");
             }
+            else
+            {
+                string usuario=cookie["Usuario"];
+                string expiracion=cookie["Expiracion"];
+                if (string.IsNullOrEmpty(expiracion) == false)
+                {
+                    DateTime expire = DateTime.Parse(expiracion);
+                    if (DateTime.Now > expire)
+                        Response.Redirect("login");
+                }
+            }
+        }
+        
+        protected void Page_Load(object sender, EventArgs e)
+        {
         }
 
         protected void hlkCerrar_Click(object sender, EventArgs e)
         {
-            HttpCookie myCookie = Request.Cookies["UserSettings"];
+            HttpCookie cookie = Request.Cookies["UsuarioSettings"];
 
-            if (myCookie != null)
+            if (cookie != null)
             {
-                myCookie.Expires = DateTime.Now.AddDays(-1);
-                Response.Cookies.Add(myCookie);
-                Response.Redirect("login.aspx");
+                cookie["Expiracion"]=DateTime.Now.ToString();
+                Response.Cookies.Add(cookie);                
             }
+            Response.Redirect("login");
         }
     }
 }

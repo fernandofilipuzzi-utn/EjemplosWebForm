@@ -108,6 +108,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="info.txt" />
     <Content Include="login.aspx" />
     <Content Include="Site.Master" />
     <Content Include="Web.config" />
