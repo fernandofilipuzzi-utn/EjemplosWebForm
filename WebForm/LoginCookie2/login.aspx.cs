@@ -5,10 +5,11 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace LoginCookieWebForm
+namespace LoginCookie2
 {
     public partial class login : System.Web.UI.Page
     {
+        
         protected void Page_Init(object sender, EventArgs e)
         {
             HttpCookie cookie = HttpContext.Current.Request.Cookies["UsuarioSettings"];

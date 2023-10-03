@@ -5,13 +5,14 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace LoginCookieWebForm
+namespace LoginCookie2
 {
     public partial class SiteMaster : MasterPage
     {
         protected void Page_Init(object sender, EventArgs e)
         {
-            if (HttpContext.Current.Request.Cookies["UsuarioSettings"] == null)
+            HttpCookie cookie = HttpContext.Current.Request.Cookies["UsuarioSettings"];
+            if (cookie == null)
             {
                 Response.Redirect("login.aspx");
             }

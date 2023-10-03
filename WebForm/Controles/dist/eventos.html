@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Formulario</title>
+
+    <style>
+        body {
+            margin: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!--https://bobbyhadz.com/blog/detect-browser-back-button-event-in-javascript-->
+
+
+    <a href="./formulario.html">formulario</a>
+
+    <script type="text/javascript">
+
+        window.addEventListener('pageshow', function (event) {
+            if (event.persisted) {
+                console.log('La página se ha cargado nuevamente debido a la navegación hacia atrás');
+            }
+            else {
+                console.log('La página no se ha cargado nuevamente debido a la navegación hacia atrás');
+            }
+        });
+
+        /*
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("La página ha sido completamente cargada.");
+        });
+        */
+        /*
+        // Verifica si existe una cookie que indica que la página ya ha sido visitada
+        if (document.cookie.indexOf("paginaVisitada=true") === -1) {
+            console.log("La página se carga por primera vez.");
+
+            document.cookie = "paginaVisitada=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+        } else {
+            console.log("La página se carga por segunda vez o más.");
+        }
+        */
+        /*
+        window.addEventListener('popstate', function (event) {
+            console.log('Se disparó el evento popstate');
+        });
+
+        window.addEventListener('pushstate', function (event) {
+            console.log('Se disparó el evento pushstate');
+        });
+        window.history.replaceState({}, '', './formulario.html');
+        */
+        /*
+        window.addEventListener('beforeunload', () => {
+            document.body.style.backgroundColor = 'red';
+        });
+
+
+        window.addEventListener('onbeforeprint', () => {
+            document.body.style.backgroundColor = 'azul';
+        });
+
+        window.addEventListener('onbeforeunload', () => {
+            document.body.style.backgroundColor = 'white';
+        });
+        */
+    </script>
+</body>
+</html>

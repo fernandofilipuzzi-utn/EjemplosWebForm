@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace LoginCookieWebForm
+namespace LoginCookie1
 {
     public partial class _Default : Page
     {

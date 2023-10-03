@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="LoginCookieWebForm.Global" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="LoginCookie2.Global" Language="C#" %>

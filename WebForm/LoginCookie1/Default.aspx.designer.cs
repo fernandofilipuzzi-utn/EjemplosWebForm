@@ -7,10 +7,8 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace LoginCookieWebForm
+namespace LoginCookie1
 {
-
-
     public partial class _Default
     {
     }

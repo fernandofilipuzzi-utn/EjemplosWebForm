@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general sobre un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie los valores de estos atributos para modificar la información
 // asociada a un ensamblado.
-[assembly: AssemblyTitle("LoginCookieWebForm")]
+[assembly: AssemblyTitle("LoginCookie1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("LoginCookieWebForm")]
+[assembly: AssemblyProduct("LoginCookie1")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID es para el Id. typelib cuando este proyecto esté expuesto a COM
-[assembly: Guid("cf2f3350-0373-4818-accb-090a81c1509e")]
+[assembly: Guid("cf2f3350-0373-4818-accb-090a81c1509d")]
 
 // La información de versión de un ensamblado consta de los siguientes cuatro valores:
 //

@@ -106,6 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="dist\eventos.html" />
     <Content Include="dist\formulario.html" />
     <Content Include="dist\listView_card.html" />
     <Content Include="favicon.ico" />

@@ -4,7 +4,7 @@ using System.Web;
 using System.Web.Routing;
 using Microsoft.AspNet.FriendlyUrls;
 
-namespace LoginCookieWebForm
+namespace LoginCookie1
 {
     public static class RouteConfig
     {

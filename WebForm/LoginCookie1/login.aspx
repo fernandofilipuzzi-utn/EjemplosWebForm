@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" 
-                Inherits="LoginCookieWebForm.login" %>
+                Inherits="LoginCookie1.login" %>
 
 <!DOCTYPE html>
 
@@ -14,7 +14,17 @@
 <body>
     <form id="form1" runat="server">
 
-        <asp:ScriptManager ID="smVecinoLogin" runat="server" />
+        <asp:ScriptManager ID="smVecinoLogin" runat="server">
+            <Scripts>
+                <asp:ScriptReference Path="https://code.jquery.com/jquery-3.5.1.slim.min.js" />
+                <asp:ScriptReference Path="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" />
+                <asp:ScriptReference Path="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" />               
+            </Scripts>
+        </asp:ScriptManager>
+
+        <script type="text/javascript">
+            
+        </script>
 
         <asp:UpdatePanel ID="uppLoginVecino" runat="server">
             <ContentTemplate>
@@ -49,9 +59,5 @@
             </ContentTemplate>
         </asp:UpdatePanel>
     </form>
-
-    <!--menu-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" />
 </body>
 </html>

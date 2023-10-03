@@ -7,7 +7,7 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace LoginCookieWebForm
+namespace LoginCookie2
 {
 
 

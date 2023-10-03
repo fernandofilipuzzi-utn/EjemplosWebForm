@@ -7,7 +7,7 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 
-namespace LoginCookieWebForm
+namespace LoginCookie2
 {
     public class Global : HttpApplication
     {
