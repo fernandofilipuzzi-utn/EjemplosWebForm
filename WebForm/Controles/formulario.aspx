@@ -6,6 +6,7 @@
     <div class="container">
 
         <!-- container y body-content centraliza y limita el ancho de la ventana-->
+
         <div class="form-group">
             <label>DNI:</label>
             <asp:TextBox id="tbDni" type="text" CssClass="form-control" placeholder="Escribe tu DNI" runat="server"/>
