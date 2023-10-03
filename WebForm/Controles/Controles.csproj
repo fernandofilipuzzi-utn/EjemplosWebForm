@@ -108,11 +108,13 @@
     <Content Include="Default.aspx" />
     <Content Include="dist\eventos.html" />
     <Content Include="dist\formulario.html" />
+    <Content Include="dist\listView_table.html" />
     <Content Include="dist\listView_card.html" />
     <Content Include="favicon.ico" />
     <Content Include="formulario.aspx" />
     <Content Include="Global.asax" />
     <Content Include="listView_card.aspx" />
+    <Content Include="listView_table.aspx" />
     <Content Include="Site.Master" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -143,6 +145,13 @@
     </Compile>
     <Compile Include="listView_card.aspx.designer.cs">
       <DependentUpon>listView_card.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="listView_table.aspx.cs">
+      <DependentUpon>listView_table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="listView_table.aspx.designer.cs">
+      <DependentUpon>listView_table.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
