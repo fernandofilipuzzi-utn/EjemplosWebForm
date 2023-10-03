@@ -116,6 +116,7 @@
     <Content Include="Global.asax" />
     <Content Include="listView_card.aspx" />
     <Content Include="listView_table.aspx" />
+    <Content Include="menu_navegacion.aspx" />
     <Content Include="Site.Master" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -154,6 +155,20 @@
     <Compile Include="listView_table.aspx.designer.cs">
       <DependentUpon>listView_table.aspx</DependentUpon>
     </Compile>
+    <Compile Include="menu_navegacion.aspx.cs">
+      <DependentUpon>menu_navegacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu_navegacion.aspx.designer.cs">
+      <DependentUpon>menu_navegacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu_navegacion.Master.cs">
+      <DependentUpon>menu_navegacion.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu_navegacion.Master.designer.cs">
+      <DependentUpon>menu_navegacion.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -170,6 +185,7 @@
     <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="menu_navegacion.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
- <form runat="server">
+    <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
                 <asp:ScriptReference Path="https://code.jquery.com/jquery-3.5.1.slim.min.js" />
@@ -48,7 +48,7 @@
         </nav>
 
         <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
             <hr />
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - Mi aplicación ASP.NET</p>
