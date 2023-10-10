@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initialscale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>MyPhoto</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="alert alert-success">
+        Hello World!
+    </div>
+
+    <div class="container-fluid myphoto-section bg-myphoto-light">
+        <div class="container">
+            <div class="row">
+                <h3>Gallery</h3>
+                <div id="gallery-carousel" class="carousel slide"
+                     data-ride="carousel" data-interval="3000">
+                    <div class="carousel-inner" role="listbox">
+                        <div style="height: 400px" class="carousel-item active">
+                            <img src="images/en_construccion.jpg" style="max-height: 100%;">
+                            <div class="carousel-caption">
+                                En construcción
+                            </div>
+                        </div>
+                        <div style="height: 400px" class="carousel-item">
+                            <img src="images/configuracion.jpg" style="max-height: 100%;">
+                            <div class="carousel-caption">
+                                Configuracion
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#gallery-carousel" role="button" data-slide="prev">
+                        <span class="icon-prev" aria-hidden="true"></span>
+                    </a>
+                    <a class="right carousel-control" href="#gallery-carousel" role="button" data-slide="next">
+                        <span class="icon-next" aria-hidden="true"></span>
+                    </a>
+                    <ol class="carousel-indicators">
+                        <li data-target="#gallery-carousel" data-slideto="0" class="active"></li>
+                        <li data-target="#gallery-carousel" data-slideto="1"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

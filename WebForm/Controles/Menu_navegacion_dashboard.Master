@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu_navegacion_dashboard.master.cs" Inherits="Controles.Menu_navegacion_dashboard" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" />
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </asp:ContentPlaceHolder>
+
+   
+    
+            <style>
+                /* Estilos del menú de navegación */
+                body {
+                    padding-top: 60px; /* Asegura que el contenido no quede detrás del navbar */
+                }
+
+                #sidebar {
+                    height: 100%;
+                    width: 250px;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background-color: #333;
+                    padding-top: 20px;
+                    color: #fff;
+                }
+
+                    #sidebar a {
+                        padding: 10px 20px;
+                        color: #fff;
+                    }
+
+                        #sidebar a:hover {
+                            background-color: #555;
+                        }
+
+                #content {
+                    margin-left: 250px;
+                    padding: 20px;
+                }
+            </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <asp:ScriptReference Path="https://code.jquery.com/jquery-3.5.1.slim.min.js" />
+                <asp:ScriptReference Path="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" />
+                <asp:ScriptReference Path="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" />
+            </Scripts>
+        </asp:ScriptManager>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Dashboard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-user"></i>Usuario</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class="fas fa-home"></i>Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-chart-bar"></i>Estadísticas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-calendar-alt"></i>Calendario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Mensajes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-cog"></i>Configuración</a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+
+        <!-- Contenido de la página -->
+        <div id="content">
+            <h1>Bienvenido al Dashboard</h1>
+            <p>Aquí puedes agregar tus widgets y contenido de dashboard.</p>
+        </div>
+    </form>
+</body>
+</html>

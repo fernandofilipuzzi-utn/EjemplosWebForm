@@ -1,0 +1,6 @@
+﻿
+.jumbotron-welcome {
+    background-image: url('../images/welcome.jpg');
+    background-size: cover;
+    color: white;
+}
