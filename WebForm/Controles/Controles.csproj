@@ -106,6 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="dist\seleccion_fichero.html" />
     <Content Include="dist\men_navegacion_dashboard.html" />
     <Content Include="dist\css\myphoto.css" />
     <Content Include="dist\images\en_construccion.jpg" />
@@ -224,6 +225,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\" />
+    <Folder Include="Uploads\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="menu_navegacion.Master" />
