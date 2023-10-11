@@ -32,7 +32,10 @@ namespace Controles
                     string path = Server.MapPath("~/Uploads/") + filename;
                     fuFichero.SaveAs(path);
 
-                   
+                    string valor = "algún valor";
+                    string serverPath = Server.MapPath("~/");
+                    string contenido = $"{valor}";
+                    File.AppendAllText(Path.Combine(serverPath+"log.txt"), contenido);
                 }
                 catch (Exception ex)
                 {
