@@ -51,6 +51,24 @@ namespace Ajax
         protected global::System.Web.UI.WebControls.TextBox tbNombre;
 
         /// <summary>
+        /// Control rbOp1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rbOp1;
+
+        /// <summary>
+        /// Control rbOp2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rbOp2;
+
+        /// <summary>
         /// Control btnPrueba.
         /// </summary>
         /// <remarks>

@@ -37,5 +37,10 @@ namespace Ajax
                 alerta2.InnerHtml = tbNombre.Text;
             }
         }
+
+        protected void rbOp2_CheckedChanged(object sender, EventArgs e)
+        {
+            btnPrueba.Visible = rbOp1.Checked == true;
+        }
     }
 }
