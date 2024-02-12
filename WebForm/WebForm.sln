@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.34031.81
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controles", "Controles\Controles.csproj", "{91A4C668-50C1-47C4-86EF-F654BA6A0721}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginCookie2", "LoginCookie2\LoginCookie2.csproj", "{B8AF8368-6F97-428A-877E-151A1B6DC25C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ajax", "Ajax\Ajax.csproj", "{0D0EEBFA-B38B-4BD1-808A-8C06BC08E6CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegracionJavascript", "IntegracionJavascript\IntegracionJavascript.csproj", "{98CDB83C-9394-4288-9B87-747C51E754EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{0D0EEBFA-B38B-4BD1-808A-8C06BC08E6CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D0EEBFA-B38B-4BD1-808A-8C06BC08E6CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D0EEBFA-B38B-4BD1-808A-8C06BC08E6CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98CDB83C-9394-4288-9B87-747C51E754EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98CDB83C-9394-4288-9B87-747C51E754EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98CDB83C-9394-4288-9B87-747C51E754EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98CDB83C-9394-4288-9B87-747C51E754EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -14,20 +14,16 @@
 
         <div class="form-group">
             <label for="tbNombre" class="form-label">Nombre:</label>
-            <asp:TextBox ID="tbNombre" type="text" CssClass="form-control" placeholder="Escribe tu nombre" runat="server" />
+            <asp:TextBox ID="tbNombre" type="text" MaxLength="10" CssClass="form-control" placeholder="Escribe tu nombre" runat="server" />
         </div>
 
         <div>
             <label for="fuFichero" class="form-label">Fichero:</label>
-            <asp:FileUpload ID="fuFichero" OnServerClick="fileUpload_ServerClick"
-                CssClass="form-control"
-                aria-describedby="inputGroupFileAddon01"
-                runat="server" />
+            <asp:FileUpload ID="fuFichero" OnServerClick="fileUpload_ServerClick" CssClass="form-control" aria-describedby="inputGroupFileAddon01" runat="server" />
         </div>
 
         <div class="col-12 text-center">
-            <asp:Button ID="btnEnviar" type="submit"
-                class="btn btn-primary mx-auto" OnClick="btnEnviar_Click" runat="server" Text="Enviar" />
+            <asp:Button ID="btnEnviar" type="submit" class="btn btn-primary mx-auto" OnClick="btnEnviar_Click" runat="server" Text="Enviar" />
         </div>
     </div>
 </asp:Content>
