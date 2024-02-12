@@ -26,7 +26,7 @@
             </div>
         </div>
 
-        <div class="card col-lg-3 col-md-4 col-sm-6 m-2 p-3" style="background-color: #e7fef6">
+        <div class="card col-lg-3 col-md-4 col-sm-6 m-2 p-3" style="background-color: #fff4fe;">
             <img src="./img/javascript-control.jpg" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;" />
             <div class="card-body">
                 <div class="card-title">
@@ -44,6 +44,26 @@
             </div>
             <div class="text-center">
                 <button type="button" id="btnCambiarDesdeJavaScript" class="btn btn-primary" onclick="btnCambiarDesdeJavaScript_click()">LLamar</button>
+            </div>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 m-2 p-3" style="background-color: #fff4fe;">
+            <img src="./img/api-web.jpg" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;" />
+            <div class="card-body">
+                <div class="card-title">
+                    <h2>HTML desde c#</h2>
+                </div>
+
+                <div class="card-text" style="max-height: 60px; overflow: hidden;">
+                    <p>Cambiando el estado de un control html desde javascript</p>
+                </div>
+
+                
+                    <label id="lbCambiarDesdecsharp" style="background-color: #ffd800" runat="server" ></label>
+               
+            </div>
+            <div class="text-center">
+                <asp:Button ID="btnCambiarDesdecsharp" CssClass="btn btn-primary" Text="Ejecutar" OnClick="btnCambiarDesdecsharp_Click" runat="server" />
             </div>
         </div>
 
@@ -79,7 +99,6 @@
                 <button type="button" id="btnEjecutarWebAPIGet" class="btn btn-primary" onclick="btnEjecutarWebAPIGet_click()">LLamar</button>
             </div>
         </div>
-
 
     </div>
 
@@ -134,12 +153,12 @@
                 console.log(response);
                 return response.json();
             })
-            .then(data => {
-                alert(data);
-            })
-            .catch(error => {
-                alert('Error:' + error);
-            });
+                .then(data => {
+                    alert(data);
+                })
+                .catch(error => {
+                    alert('Error:' + error);
+                });
         }
 
         //
