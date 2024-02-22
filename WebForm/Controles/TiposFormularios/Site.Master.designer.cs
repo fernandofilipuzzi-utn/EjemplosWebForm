@@ -7,56 +7,47 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Controles
+namespace Controles.TiposFormularios
 {
 
 
-    public partial class formulario
+    public partial class Site
     {
 
         /// <summary>
-        /// Control tbDni.
+        /// Control lbUsuarioNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbDni;
+        protected global::System.Web.UI.WebControls.Label lbUsuarioNombre;
 
         /// <summary>
-        /// Control tbNombre.
+        /// Control lbtnCerrar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbNombre;
+        protected global::System.Web.UI.WebControls.LinkButton lbtnCerrar;
 
         /// <summary>
-        /// Control fuFichero.
+        /// Control MainContent.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fuFichero;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
 
         /// <summary>
-        /// Control fuFicheroCustom.
+        /// Control UpdatePanelModal.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fuFicheroCustom;
-
-        /// <summary>
-        /// Control btnEnviar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEnviar;
+        protected global::System.Web.UI.UpdatePanel UpdatePanelModal;
     }
 }

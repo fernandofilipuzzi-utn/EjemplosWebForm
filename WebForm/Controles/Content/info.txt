@@ -1,0 +1,7 @@
+﻿<div class="btn-wrapper">
+<label class="btn-file">
+	Elegir archivos
+<input type="file" class="file-submit" name="fileUpload" accept=".jpg" multiple="multiple">
+</label>
+<span>No se eligio archivo</span>
+</div>

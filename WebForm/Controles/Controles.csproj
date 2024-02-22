@@ -105,9 +105,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\info.txt" />
+    <Content Include="Content\input-file.css" />
+    <Content Include="Content\checkbox-switch.css" />
+    <Content Include="Content\copy-paste.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Content\Utils\Utils.css" />
+    <Content Include="Controles\Formulario2.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="dist\table.html" />
     <Content Include="dist\seleccion_fichero.html" />
     <Content Include="dist\men_navegacion_dashboard.html" />
     <Content Include="dist\css\myphoto.css" />
@@ -152,12 +157,27 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="TiposFormularios\Detalle.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controles\Formulario2.aspx.cs">
+      <DependentUpon>Formulario2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\Formulario2.aspx.designer.cs">
+      <DependentUpon>Formulario2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\SiteFormulario2.Master.cs">
+      <DependentUpon>SiteFormulario2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\SiteFormulario2.Master.designer.cs">
+      <DependentUpon>SiteFormulario2.Master</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -225,9 +245,24 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="TiposFormularios\Detalle.aspx.cs">
+      <DependentUpon>Detalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TiposFormularios\Detalle.aspx.designer.cs">
+      <DependentUpon>Detalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TiposFormularios\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TiposFormularios\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Formularios\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Controles\menu_navegacion.Master" />
@@ -236,7 +271,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Controles\SiteFormulario2.Master" />
     <None Include="packages.config" />
+    <Content Include="TiposFormularios\Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
