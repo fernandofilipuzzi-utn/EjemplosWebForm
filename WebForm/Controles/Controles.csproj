@@ -262,7 +262,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Formularios\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Controles\menu_navegacion.Master" />
