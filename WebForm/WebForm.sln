@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VentanaModal", "VentanaModa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegracionJavascriptHTML", "IntegracionJavascript\IntegracionJavascriptHTML.csproj", "{98CDB83C-9394-4288-9B87-747C51E754EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebListView", "WebListView\WebListView.csproj", "{2936C0C3-53E0-4B99-921F-4B353A94EB7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{98CDB83C-9394-4288-9B87-747C51E754EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98CDB83C-9394-4288-9B87-747C51E754EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98CDB83C-9394-4288-9B87-747C51E754EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2936C0C3-53E0-4B99-921F-4B353A94EB7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2936C0C3-53E0-4B99-921F-4B353A94EB7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2936C0C3-53E0-4B99-921F-4B353A94EB7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2936C0C3-53E0-4B99-921F-4B353A94EB7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

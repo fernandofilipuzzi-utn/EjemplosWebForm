@@ -49,7 +49,12 @@
 
                 return false; //previen el postback
             }
-
+            else
+            {
+                var lbMensaje = document.getElementById('<%=lbMensaje.ClientID%>');
+                lbMensaje.style.display = "none";
+                lbMensaje.innerText = ""
+            }
             return true; 
         }
 
