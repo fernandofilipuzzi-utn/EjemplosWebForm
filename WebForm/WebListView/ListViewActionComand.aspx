@@ -8,9 +8,23 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
+    <asp:ListView ID="lw" runat="server" OnItemCommand="lw_ItemCommand">
+        <LayoutTemplate>
+            <table>
+                <asp:PlaceHolder ID="itemPlaceHolder" runat="server"/>
+            <table>
+        </LayoutTemplate>
+        <ItemTemplate>
+            <tr>
+                <td><%# Eval("Id") %></td>
+                <td><%# Eval("Fecha","{0:dd/MM/yyyy}") %></td>
+     
+                <td>
+                    <asp:Button ID="btnpeAction" runat="server" Text="Action" 
+                        CommandName="ActionCommand" CommandArgument='<%# Eval("Id") %>' />
+                </td>
+            </tr>
+        </ItemTemplate>
+    </asp:ListView >
 </body>
 </html>
