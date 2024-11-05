@@ -40,8 +40,11 @@ namespace WebListView
 
                 string id = e.CommandArgument.ToString();
 
+                Label lbFecha = (Label)e.Item.FindControl("lbFecha");
 
-                Response.Redirect($"~/{id}");
+                string fecha= lbFecha.Text;    
+
+                Response.Redirect($"~?Id={id}&Fecha={fecha}");
             }
         }
     }
