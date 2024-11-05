@@ -44,6 +44,8 @@ namespace WebListView
 
                 string fecha= lbFecha.Text;    
 
+
+
                 Response.Redirect($"~?Id={id}&Fecha={fecha}");
             }
         }
