@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDisenioHTMLCSSJS", "WebDisenioHTMLCSSJS\WebDisenioHTMLCSSJS.csproj", "{BDD2DB2D-B217-48CC-8D83-0C7D327673CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDisenioASPX", "WebDisenioASPX\WebDisenioASPX.csproj", "{31107D5A-C9C7-4F5F-B025-A90CB2F40706}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDD2DB2D-B217-48CC-8D83-0C7D327673CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD2DB2D-B217-48CC-8D83-0C7D327673CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD2DB2D-B217-48CC-8D83-0C7D327673CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD2DB2D-B217-48CC-8D83-0C7D327673CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31107D5A-C9C7-4F5F-B025-A90CB2F40706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31107D5A-C9C7-4F5F-B025-A90CB2F40706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31107D5A-C9C7-4F5F-B025-A90CB2F40706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31107D5A-C9C7-4F5F-B025-A90CB2F40706}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A473908-B920-42BD-9C95-C29BD59CE684}
+	EndGlobalSection
+EndGlobal
